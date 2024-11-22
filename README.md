@@ -9,3 +9,11 @@ supported by calculator you will have to modify the enum and also the Arithmetic
 !["Java Code for a Calculator Design"](calculator.png?raw=true)
 
 ### Strategy Pattern to the rescue:
+Suppose we want to now support new operations (e.g. modulus and power). By using the Strategy pattern we can achieve this without violating the Open/Closed principle.
+
+#### Operation interface
+```java
+public interface Operation {
+	double apply(double left, double right);
+}
+```
