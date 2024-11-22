@@ -1,4 +1,4 @@
-package net.mahtabalam;
+package net.mahtabalam.calculator1;
 
 public class Main {
 
@@ -21,7 +21,7 @@ public class Main {
         Expression two = new Number(2);
         Expression parentExpression = new ArithmeticExpression(two, divideExpression, Operation.MULTIPLY);
 
-        System.out.println(parentExpression.evaluate());
+        System.out.println(parentExpression.evaluate()); // prints 4.0
     }
 }
 

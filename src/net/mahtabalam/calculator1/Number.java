@@ -1,4 +1,4 @@
-package net.mahtabalam;
+package net.mahtabalam.calculator1;
 
 public class Number implements Expression{
     double value;
